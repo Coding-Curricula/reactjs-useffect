@@ -1,6 +1,9 @@
 // react.js imports - specifically our HOOKS!
 import React, {useState, useEffect} from 'react'
 
+// import Posts component
+import Posts from "./components/Posts"
+
 // main component function
 export default function App() {
   // slice of state declaration
@@ -15,6 +18,8 @@ export default function App() {
     <div>
       <h1>{count}</h1>
       <button onClick={() => setCount(count + 1)}>Increment</button>
+
+    <Posts />
     </div>
   )
 }
